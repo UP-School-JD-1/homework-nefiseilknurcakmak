@@ -1,0 +1,37 @@
+import java.util.Date;
+
+public class MasterStudent extends GraduateStudent {
+
+	public MasterStudent(int no, String name, int year, String major,Date dob, String advisor, String thesis) {
+		super(no, name, year, major, dob, advisor, thesis);
+		
+	}
+
+
+	@Override
+	public void study() {
+	
+		System.out.println(getName() +  " who master student is studying in department of " + major );
+	}
+	@Override
+	public void register() {
+	
+		System.out.println(getName() +  " who master student has registered." );
+	
+	}
+
+	@Override
+	public void writeThesis () {
+		
+		System.out.println(  getName() + " that master student is writing thesis  about " + getThesis());
+		}
+
+	@Override
+	public void meetWithAdvisor() {
+		
+		System.out.println( getName() + " that master student meets once in a week with advisor who is  " + getAdvisor());
+	}
+	    }
+	
+
+
