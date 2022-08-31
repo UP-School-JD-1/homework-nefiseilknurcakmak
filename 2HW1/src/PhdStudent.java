@@ -1,10 +1,11 @@
+import java.util.Date;
 
 public class PhdStudent extends GraduateStudent {
 
 	boolean  qualifyingExamTaken;
 	
-	public PhdStudent(int no, String name, int year, String major, String advisor, String thesis,boolean  qualifyingExamTaken) {
-		super(no, name, year, major, advisor, thesis);
+	public PhdStudent(int no, String name, int year, Date dob, String major, String advisor, String thesis,boolean  qualifyingExamTaken) {
+		super(no, name, year, major, dob, advisor, thesis);
 		this.qualifyingExamTaken=qualifyingExamTaken;
 		
 		

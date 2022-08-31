@@ -1,13 +1,12 @@
+import java.util.Date;
 
 public class MasterStudent extends GraduateStudent {
 
-	public MasterStudent(int no, String name, int year, String major, String advisor, String thesis) {
-		super(no, name, year, major, advisor, thesis);
+	public MasterStudent(int no, String name, int year, String major,Date dob, String advisor, String thesis) {
+		super(no, name, year, major, dob, advisor, thesis);
 		
 	}
 
-
-	
 
 	@Override
 	public void study() {

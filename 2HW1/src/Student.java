@@ -1,20 +1,22 @@
-
+import java.util.Date;
 
 public class Student {
-	int no;
+    int no;
 	String name;
 	int year;
 	String major;
-	
-	
-	public Student(int no, String name, int year, String major)
+	Date dob;
+
+	public Student(int no, String name, int year,Date dob, String major)
 	{
 		this.no=no;
 		this.name=name;
 		this.year=year;
+		this.dob=dob;
 		this.major=major;
-	
+
 	}
+
 
 	public void study() {
 		System.out.println(name + " is studying in department of " + major );
@@ -27,7 +29,14 @@ public class Student {
 	}
 	
 	
+	public Date getDob() {
+		return dob;
+	}
 
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+	
 	public int getNo() {
 		return no;
 	}
@@ -60,10 +69,10 @@ public class Student {
 		this.major = major;
 	}
 
+
 	@Override
 	public String toString() {
-		return "Student [no=" + no + ", name=" + name + ", year=" + year + ", major=" + major + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		return "Student [no=" + no + ", name=" + name + ", year=" + year + ", major=" + major + ", dob=" + dob + "]";
 	}
-	
+
 }

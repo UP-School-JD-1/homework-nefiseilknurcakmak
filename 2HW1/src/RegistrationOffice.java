@@ -1,32 +1,33 @@
+import java.util.Date;
+
 
 
 public class RegistrationOffice {
 
-
-
+	@SuppressWarnings("deprecation")
 	public Student getAStudent() {
 		Student student = null;
 		int i = (int) (6 * Math.random());
 
 		switch (i) {
 		case 0:
-			student = new Student(1231, "Nefise", 2014, "Elementary Mathematics Education");
+			student = new Student(1231, "Nefise", 2014, new Date("1/2/2000"), "Elementary Mathematics Education");
 			break;
 		case 1:
-			student = new UndergraduateStudent(3452, "Fatma", 2013, "Industrial Design", "Mathematics");
+			student = new UndergraduateStudent(3452, "Fatma", 2013,new Date("9/18/1996"), "Industrial Design", "Mathematics");
 			break;
 		case 2:
-			student = new VocationalStudent(2345, "Jessica", 2021, "Physics");
+			student = new VocationalStudent(2345, "Jessica", 2021, new Date("3/10/1997"), "Physics");
 			break;
 		case 3:
-			student = new GraduateStudent(503, "Mert", 2004, "Mechanical Engineer", "Prof. Erdinç", "robotics");
+			student = new GraduateStudent(503, "Mert", 2004, "Mechanical Engineer", new Date("5/22/1993"), "Prof. Erdinç", "robotics");
 			break;
 		case 4:
-			student = new MasterStudent(504, "Ali", 20022, "Computer Eengineer", "Prof. Mine", "Game Development");
+			student = new MasterStudent(504, "Ali", 20022, "Computer Eengineer", new Date("6/5/1994"), "Prof. Mine", "Game Development");
 			break;
 
 		case 5:
-			student = new PhdStudent(799, "Işıl", 2019, "Mathematics Education", "Prof. Şerife", "Algebra", false);
+			student = new PhdStudent(799, "Işıl", 2019, new Date("3/9/1992"),"Mathematics Education", "Prof. Şerife", "Algebra", false);
 			break;
 		}
 

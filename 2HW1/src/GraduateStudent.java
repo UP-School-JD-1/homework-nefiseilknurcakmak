@@ -1,11 +1,12 @@
+import java.util.Date;
 
 public class GraduateStudent extends Student{
 	
 	String advisor;
 	String thesis;
 
-	public GraduateStudent(int no, String name, int year, String major, String advisor, String thesis) {
-		super(no, name, year, major);
+	public GraduateStudent(int no, String name, int year, String major, Date dob, String advisor, String thesis) {
+		super(no, name, year, dob, major);
 		this.advisor=advisor;
 		this.thesis=thesis;
 	}

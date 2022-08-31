@@ -1,10 +1,11 @@
+import java.util.Date;
 
 public class UndergraduateStudent extends Student {
 
 	    String minor;
 
-	    public UndergraduateStudent(int no, String name, int year, String major, String minor) {
-	        super(no, name, year, major);
+	    public UndergraduateStudent(int no, String name, int year, Date dob, String major, String minor) {
+	        super(no, name, year, dob, major);
 	        this.minor = minor;
 	    }
 
@@ -32,11 +33,10 @@ public class UndergraduateStudent extends Student {
 		@Override
 		public String toString() {
 			return "UndergraduateStudent [minor=" + minor + ", no=" + no + ", name=" + name + ", year=" + year
-					+ ", major=" + major + ", getMinor()=" + getMinor() + ", getNo()=" + getNo() + ", getName()="
-					+ getName() + ", getYear()=" + getYear() + ", getMajor()=" + getMajor() + ", toString()="
-					+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+					+ ", major=" + major + ", dob=" + dob + "]";
 		}
 
+		
 	    
 	
 }
